@@ -5,6 +5,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size:20px;
         }
 
 .myDiv h2{
@@ -105,6 +106,20 @@ nav .right a:last-child{
 }
 
 /* SECTION1 */
+.cont1{
+    display: flex;
+    margin: 60px 60px;
+    padding:40px 40px;
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right:50px;
+    border-radius:5%;
+    background-color: #ffffff;
+    border-style:inset;
+    border-color:rgb(10, 41, 213);
+    align-items: center;
+}
+
 .intro-section{
     display: flex;
     justify-content: space-between;
@@ -121,7 +136,7 @@ nav .right a:last-child{
 }
 
 .intro-section .text p{
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 17px;
 }
 
@@ -130,7 +145,7 @@ nav .right a:last-child{
 }
 
 .intro-section .text .links{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .intro-section .text .links a{
@@ -152,22 +167,83 @@ nav .right a:last-child{
 
 .intro-section .photo img{
     width:300px;
-    border-radius: 30%;
+    border-radius: 90%;
+    border-style:solid;
+    border-color:rgb(0, 0, 0);
 }
 
 /*Section 2*/
+.skills-section{
+    padding: 10px;
+    margin-top:40px;
+    margin-bottom: 50px;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size:30px;
+}
+
+
 .container {
     display: flex;
     margin: 70px 70px;
-    background-color: #e2e2c9;
+    margin-top: 20px;
+    background-color: #FAF3DD;
 }
 .container div{
     background-color: white;
     margin: 10px;
     padding: 50px;
+    font-size: 17px;
+}
+
+/* Section 3*/
+.accomplishments-section {
+    background-color: rgb(225, 246, 243);
+    padding:20px;
+}
+
+.accomplishments-section h2{
+    text-align: center;
+    font-size:30px;
+}
+
+.accomplishments-section p{
+    margin:20px;
+    padding:20px;
+    text-align: left;
     font-size: 20px;
 }
 
+/*SECTION 4*/
+.contact-section{
+    padding: 0 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+}
+
+.contact-section .info {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .info .text{
+    flex: 3; 
+    margin-top:10px;
+}
+
+.contact-section .info form{
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+
+}
 
 @media (max-width: 600px){
     /*NAVBAR */
