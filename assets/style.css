@@ -189,6 +189,72 @@ main img {
     border: 3px solid var(--primary);
 }
 
+/* star floating animation */
+.stars img{
+    width: 50px;
+    animation: stars 5s linear infinite;
+}
+
+.stars {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:relative;
+    bottom:0;
+}
+
+
+@keyframes stars{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.stars img:nth-child(1){
+    animation-delay: 0.5s;
+    width: 45px;
+}
+.stars img:nth-child(2){
+    animation-delay: 1s;
+    width: 35px;
+}
+.stars img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+.stars img:nth-child(4){
+    animation-delay: 0.5s;
+}
+.stars img:nth-child(5){
+    animation-delay: 3s;
+    width: 30px;
+}
+.stars img:nth-child(6){
+    animation-delay: 2s;
+}
+.stars img:nth-child(7){
+    animation-delay: 0.5s;
+    width: 35px;
+}
+.stars img:nth-child(8){
+    animation-delay: 3s;
+    width: 45px;
+}
+
 /* ===== TEAM SECTION — name + image side by side ===== */
 .team-member {
     display: flex;
@@ -263,6 +329,7 @@ body.dark-mode main img {
     align-items: center;
     gap: 30px;
     padding: 40px;
+    margin-top: 40px;
     background-color: var(--light-blue);
     width: 100%;
     box-sizing: border-box;
@@ -286,12 +353,42 @@ body.dark-mode main img {
     font-size: 2rem;
     color: var(--primary);
     margin-bottom: 15px;
+    border-right: 3px solid;
+    /* type-writer effect */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s,
+        cursor 0.7s step-end infinite alternate;
+    justify-content: center;
+}
+
+/* cursor blinking */
+@keyframes cursor{
+    50% {border-color: transparent}
+}
+
+/* typing effect */
+@keyframes typing{
+    from {width:0}
 }
 
 .hero-content p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
+}
+
+/* about */
+#about h2{
+    margin-top: 40px;
+}
+
+#about p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
 }
 
 /* Dark mode */
@@ -301,8 +398,8 @@ body.dark-mode #hero {
 body.dark-mode .hero-content h1,
 body.dark-mode .hero-content p {
     color: #e0e0e0;
-}verflow: hidden;
-}
+}{verflow: hidden;}
+
 /* ===== TEAM SECTION ===== */
 .team-grid {
     display: flex;
@@ -315,6 +412,7 @@ body.dark-mode .hero-content p {
 .team-card {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
     align-items: center;
     text-align: center;
     background-color: var(--light-blue);
@@ -357,6 +455,10 @@ body.dark-mode .hero-content p {
     text-decoration: none;
 }
 .team-card a:hover { text-decoration: underline; }
+
+#our-team h2{
+    margin-top: 40px;
+}
 
 /* Dark mode */
 body.dark-mode .team-card {
